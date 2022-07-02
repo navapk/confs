@@ -8,5 +8,6 @@ piactl connect &
 lxpolkit &
 dwmblocks &
 setxkbmap -option caps:escape &
+sxhkd &
 
 exec $HOME/confs/bin/startdwm

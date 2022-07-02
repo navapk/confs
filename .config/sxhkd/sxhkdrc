@@ -1,0 +1,14 @@
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + grave
+    ~/confs/bin/demoji
+
+super + {minus,equal}
+    pamixer -{d,i} 5 && kill -48 $(pidof dwmblocks)
+
+super + bracket{left,right}
+    xbacklight -{dec,inc} 5 && kill -49 $(pidof dwmblocks)
+
+super + m
+    pamixer -t && kill -48 $(pidof dwmblocks)
