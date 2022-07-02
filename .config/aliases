@@ -1,0 +1,40 @@
+# ls stuff
+alias ls="ls --color=auto" 
+alias ll="ls -al"
+alias l="ls -l"
+
+# common ops in verbose mode
+alias mv="mv -v"
+alias rm="rm -v"
+alias cp="cp -v"
+
+alias startx="startx $XINITRC"
+
+# arch stuff
+alias upg="yay -Syu"
+alias rem="yay -Rcns"
+alias ins="yay -S"
+
+# programs
+alias v="nvim"
+alias n="nano"
+alias z="zathura"
+
+# git stuff
+alias gs="git status" 
+alias gpom="git push origin main" 
+alias gc="git commit" 
+alias gaa="git add -A"
+
+# common dirs
+alias d="cd ~/docs && ls"
+alias D="cd ~/downs && ls"
+alias m="cd ~/music && ls"
+alias p="cd ~/pics && ls" 
+alias t="cd ~/torrs && ls" 
+alias vv="cd ~/vids && ls"
+alias wk="cd ~/wiki && ls"
+
+# yt-dlp stuff
+alias ymp3="yt-dlp --extract-audio --audio-format mp3 --no-playlist --format 'bestaudio' --output '$HOME/music/%(uploader)s/%(title)s.%(ext)s'"
+alias ypl3="yt-dlp --extract-audio --audio-format mp3 --yes-playlist --format 'bestaudio' --output '$HOME/music/%(playlist)s/%(title)s.%(ext)s'"
