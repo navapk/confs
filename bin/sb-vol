@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mut=$(pamixer --get-mute)
+vol=$(pamixer --get-volume)
+
+if [ "$mut" == "false" ]
+then
+    echo "🔊 $vol"
+else
+    echo "🔇 $vol"
+fi

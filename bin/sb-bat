@@ -1,0 +1,11 @@
+#!/bin/sh
+
+bat=$(cat /sys/class/power_supply/BAT*/capacity)
+time=$(printf "%.5s" $(acpi -b | awk '{print $5}'))
+
+if [ $bat -lt 25 ]
+then
+    echo "🪫 $bat ($time)"
+else
+    echo "🔋 $bat ($time)"
+fi

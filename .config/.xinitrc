@@ -6,6 +6,7 @@ xwallpaper --zoom $HOME/confs/wall.jpg &
 play-with-mpv &
 piactl connect &
 lxpolkit &
+dwmblocks &
 setxkbmap -option caps:escape &
 
 exec $HOME/confs/bin/startdwm

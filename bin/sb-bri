@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bri=$(printf "%.0f" $(xbacklight))
+echo "🔆 $bri"

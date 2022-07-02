@@ -1,0 +1,10 @@
+#!/bin/sh
+
+tun=$(ip tuntap)
+
+if [ -z "$tun" ]
+then
+    echo "🔓 off"
+else
+    echo "🔒 on"
+fi
