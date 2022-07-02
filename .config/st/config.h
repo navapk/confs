@@ -7,6 +7,10 @@
  */
 static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
+/* Spare fonts */
+static char *font2[] = {
+    "Twemoji:pixelsize=12",
+};
 
 /*
  * What program is execed by st depends of these precedence rules:
