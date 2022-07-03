@@ -38,3 +38,7 @@ alias wk="cd ~/wiki && ls"
 # yt-dlp stuff
 alias ymp3="yt-dlp --extract-audio --audio-format mp3 --no-playlist --format 'bestaudio' --output '$HOME/music/%(uploader)s/%(title)s.%(ext)s'"
 alias ypl3="yt-dlp --extract-audio --audio-format mp3 --yes-playlist --format 'bestaudio' --output '$HOME/music/%(playlist)s/%(title)s.%(ext)s'"
+
+wea () {
+    curl "wttr.in/$1"
+}
