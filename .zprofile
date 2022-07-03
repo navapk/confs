@@ -8,7 +8,6 @@ export ZDOTDIR="$HOME/.config/zsh"
 export XINITRC="$HOME/.config/.xinitrc"
 export LESSHISTFILE="-"
 export WGETRC="$HOME/.config/wget/wgetrc"
-export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
 export XAUTHORITY="$HOME/.config/.Xauthority"
 
 # gruvbox colored man-pages

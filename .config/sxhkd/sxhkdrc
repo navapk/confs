@@ -12,3 +12,6 @@ super + bracket{left,right}
 
 super + m
     pamixer -t && kill -48 $(pidof dwmblocks)
+
+Print
+    ~/confs/bin/ssmenu
