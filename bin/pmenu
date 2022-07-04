@@ -1,0 +1,11 @@
+#!/bin/sh
+
+res=$(printf "🔒 Lock\n💤 Sleep\n🚪 Logout\n♻️ Restart\n🖥️ Shutdown" | dmenu -i)
+
+case $res in
+    "🔒 Lock") slock ;;
+    "💤 Sleep") slock systemctl suspend -i ;;
+    "🚪 Logout") killall xinit ;;
+    "♻️ Restart") reboot ;;
+    "🖥️ Shutdown") shutdown now ;;
+esac

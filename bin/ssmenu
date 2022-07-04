@@ -3,10 +3,10 @@
 res=$(printf "Area\nActive Window\nFull Screen\nArea (copy)\nActive Window (copy)\nFull Screen (copy)" | dmenu -i -p "Choose One:" -l 20)
 
 case $res in
-    "Area") maim -s ~/pics/$(date +%s).png ;;
-    "Area (copy)") maim -s | xclip -selection clipboard -t image/png ;;
-    "Active Window") maim -i $(xdotool getactivewindow) ~/pics/$(date +%s).png ;;
-    "Active Window (copy)") maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png ;;
-    "Full Screen") maim ~/pics/$(date +%s).png ;;
-    "Full Screen (copy)") maim | xclip -selection clipboard -t image/png ;;
+    "Area") maim -u -s ~/pics/$(date +%s).png ;;
+    "Area (copy)") maim -u -s | xclip -selection clipboard -t image/png ;;
+    "Active Window") maim -u -i $(xdotool getactivewindow) ~/pics/$(date +%s).png ;;
+    "Active Window (copy)") maim -u -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png ;;
+    "Full Screen") maim -u ~/pics/$(date +%s).png ;;
+    "Full Screen (copy)") maim -u | xclip -selection clipboard -t image/png ;;
 esac

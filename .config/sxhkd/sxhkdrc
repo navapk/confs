@@ -15,3 +15,6 @@ super + m
 
 Print
     ~/confs/bin/ssmenu
+
+super + x
+    ~/confs/bin/pmenu
